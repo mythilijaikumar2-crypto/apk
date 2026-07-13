@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'core/theme.dart';
 import 'screens/demo_screen.dart';
+import 'screens/splash_screen.dart';
 
 void main() {
   runApp(
@@ -45,8 +46,8 @@ class FintechSuperApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => const DemoScreen(),
-        // Additional routes will be registered here as screens are added
+        '/': (context) => const SplashScreen(),
+        '/home': (context) => const DemoScreen(),
       },
     );
   }
