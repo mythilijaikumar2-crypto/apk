@@ -9,13 +9,13 @@ class AppShell extends StatelessWidget {
   final Widget? floatingActionButton;
 
   const AppShell({
-    Key? key,
+    super.key,
     required this.body,
     required this.title,
     this.currentBottomIndex = 0,
     this.onBottomTabChanged,
     this.floatingActionButton,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -105,11 +105,11 @@ class AppShell extends StatelessWidget {
         backgroundColor: AppColors.surface,
         child: Column(
           children: [
-            UserAccountsDrawerHeader(
-              decoration: const BoxDecoration(
+            const UserAccountsDrawerHeader(
+              decoration: BoxDecoration(
                 gradient: AppColors.primaryGradient,
               ),
-              currentAccountPicture: const CircleAvatar(
+              currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.white,
                 child: Text(
                   "A",
@@ -119,11 +119,11 @@ class AppShell extends StatelessWidget {
                       fontWeight: FontWeight.bold),
                 ),
               ),
-              accountName: const Text(
+              accountName: Text(
                 "Agent Rajesh Kumar",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
               ),
-              accountEmail: const Text("rajesh.kumar@fintechagent.com"),
+              accountEmail: Text("rajesh.kumar@fintechagent.com"),
             ),
             Expanded(
               child: ListView(

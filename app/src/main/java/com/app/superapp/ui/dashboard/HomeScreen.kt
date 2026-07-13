@@ -28,6 +28,8 @@ import com.app.superapp.core.components.ServiceGridTile
 import com.app.superapp.core.components.TransactionListItem
 import com.app.superapp.core.designsystem.Dimens
 import com.app.superapp.core.util.UiState
+import com.app.superapp.domain.dashboard.model.PromoBanner
+import androidx.compose.ui.text.style.TextAlign
 
 @Composable
 fun HomeScreen(

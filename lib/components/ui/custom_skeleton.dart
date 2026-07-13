@@ -7,12 +7,12 @@ class CustomSkeleton extends StatefulWidget {
   final Widget? child;
 
   const CustomSkeleton({
-    Key? key,
+    super.key,
     this.width = double.infinity,
     required this.height,
     this.borderRadius = 8,
     this.child,
-  }) : super(key: key);
+  });
 
   @override
   State<CustomSkeleton> createState() => _CustomSkeletonState();
@@ -68,10 +68,10 @@ class SkeletonList extends StatelessWidget {
   final double itemHeight;
 
   const SkeletonList({
-    Key? key,
+    super.key,
     this.itemCount = 3,
     this.itemHeight = 72,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -88,17 +88,17 @@ class SkeletonList extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: Colors.grey.shade200, width: 1),
           ),
-          child: Row(
+          child: const Row(
             children: [
-              const CustomSkeleton(width: 48, height: 48, borderRadius: 24),
-              const SizedBox(width: 12),
+              CustomSkeleton(width: 48, height: 48, borderRadius: 24),
+              SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const CustomSkeleton(width: 120, height: 16, borderRadius: 4),
-                    const SizedBox(height: 8),
-                    const CustomSkeleton(width: double.infinity, height: 12, borderRadius: 4),
+                    CustomSkeleton(width: 120, height: 16, borderRadius: 4),
+                    SizedBox(height: 8),
+                    CustomSkeleton(width: double.infinity, height: 12, borderRadius: 4),
                   ],
                 ),
               ),

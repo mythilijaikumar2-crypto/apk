@@ -66,7 +66,7 @@ fun PaymentEntryScreen(
             Spacer(modifier = Modifier.weight(1f))
             
             AppButton(
-                text = "PAY ₹\${if (amount.isEmpty()) "0" else amount}",
+                text = "PAY ₹" + (if (amount.isEmpty()) "0" else amount),
                 enabled = amount.isNotEmpty(),
                 onClick = { onPaymentComplete(amount) }
             )

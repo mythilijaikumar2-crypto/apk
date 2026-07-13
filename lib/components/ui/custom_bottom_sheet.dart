@@ -7,11 +7,11 @@ class CustomBottomSheet extends StatelessWidget {
   final bool showHeader;
 
   const CustomBottomSheet({
-    Key? key,
+    super.key,
     required this.title,
     required this.content,
     this.showHeader = true,
-  }) : super(key: key);
+  });
 
   static Future<T?> show<T>({
     required BuildContext context,

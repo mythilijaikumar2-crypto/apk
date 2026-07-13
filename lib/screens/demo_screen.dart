@@ -15,7 +15,7 @@ import '../components/ui/stepper_form.dart';
 import '../core/theme.dart';
 
 class DemoScreen extends StatefulWidget {
-  const DemoScreen({Key? key}) : super(key: key);
+  const DemoScreen({super.key});
 
   @override
   State<DemoScreen> createState() => _DemoScreenState();
@@ -44,9 +44,9 @@ class _DemoScreenState extends State<DemoScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Hero Welcome Section
-            CustomCard(
+            const CustomCard(
               gradient: AppColors.primaryGradient,
-              child: const Column(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
@@ -284,8 +284,8 @@ class _DemoScreenState extends State<DemoScreen> {
 
             // Tabular Data Section
             _buildSectionHeader("Data Table"),
-            CustomTable(
-              columns: const [
+            const CustomTable(
+              columns: [
                 TableColumnDef(label: "Service", width: 1.5),
                 TableColumnDef(label: "Agent ID", width: 1.2),
                 TableColumnDef(label: "Status", width: 1.0, alignment: Alignment.center),
@@ -293,16 +293,16 @@ class _DemoScreenState extends State<DemoScreen> {
               ],
               rows: [
                 [
-                  const Text("AEPS Cashout", style: TextStyle(fontWeight: FontWeight.bold)),
-                  const Text("AG-7281"),
-                  const StatusBadge(label: "Success", status: BadgeStatus.success),
-                  const Text("₹2,500.00", style: TextStyle(fontWeight: FontWeight.bold)),
+                  Text("AEPS Cashout", style: TextStyle(fontWeight: FontWeight.bold)),
+                  Text("AG-7281"),
+                  StatusBadge(label: "Success", status: BadgeStatus.success),
+                  Text("₹2,500.00", style: TextStyle(fontWeight: FontWeight.bold)),
                 ],
                 [
-                  const Text("Electricity Bill", style: TextStyle(fontWeight: FontWeight.bold)),
-                  const Text("AG-3920"),
-                  const StatusBadge(label: "Failed", status: BadgeStatus.error),
-                  const Text("₹1,430.00", style: TextStyle(fontWeight: FontWeight.bold)),
+                  Text("Electricity Bill", style: TextStyle(fontWeight: FontWeight.bold)),
+                  Text("AG-3920"),
+                  StatusBadge(label: "Failed", status: BadgeStatus.error),
+                  Text("₹1,430.00", style: TextStyle(fontWeight: FontWeight.bold)),
                 ],
               ],
             ),

@@ -17,13 +17,13 @@ class StepperForm extends StatefulWidget {
   final String completeButtonText;
 
   const StepperForm({
-    Key? key,
+    super.key,
     required this.steps,
     required this.currentStep,
     required this.onStepChanged,
     required this.onComplete,
     this.completeButtonText = "Submit",
-  }) : super(key: key);
+  });
 
   @override
   State<StepperForm> createState() => _StepperFormState();

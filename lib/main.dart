@@ -35,7 +35,7 @@ class AppState extends ChangeNotifier {
 }
 
 class FintechSuperApp extends StatelessWidget {
-  const FintechSuperApp({Key? key}) : super(key: key);
+  const FintechSuperApp({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -8,12 +8,12 @@ class CustomModal extends StatelessWidget {
   final bool showCloseButton;
 
   const CustomModal({
-    Key? key,
+    super.key,
     required this.title,
     required this.content,
     this.actions,
     this.showCloseButton = true,
-  }) : super(key: key);
+  });
 
   static Future<T?> show<T>({
     required BuildContext context,

@@ -7,11 +7,11 @@ class CustomTabs extends StatelessWidget {
   final ValueChanged<int> onChanged;
 
   const CustomTabs({
-    Key? key,
+    super.key,
     required this.tabs,
     required this.selectedIndex,
     required this.onChanged,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

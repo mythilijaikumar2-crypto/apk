@@ -9,6 +9,11 @@ import com.app.superapp.ui.auth.*
 import com.app.superapp.ui.banking.*
 import com.app.superapp.ui.dashboard.*
 import com.app.superapp.ui.payments.*
+import com.app.superapp.ui.bills.*
+import com.app.superapp.ui.travel.*
+import com.app.superapp.ui.insurance.*
+import com.app.superapp.ui.gov.*
+import com.app.superapp.ui.support.*
 
 @Composable
 fun NavGraph() {

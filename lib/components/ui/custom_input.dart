@@ -16,7 +16,7 @@ class CustomInput extends StatefulWidget {
   final String? Function(String?)? validator;
 
   const CustomInput({
-    Key? key,
+    super.key,
     required this.label,
     this.hint,
     this.controller,
@@ -29,7 +29,7 @@ class CustomInput extends StatefulWidget {
     this.onSuffixTap,
     this.onChanged,
     this.validator,
-  }) : super(key: key);
+  });
 
   @override
   State<CustomInput> createState() => _CustomInputState();

@@ -26,7 +26,8 @@ migrate.json
 .packages
 .pub-cache/
 .pub/
-/build/
+build/
+**/build/
 
 # Android Related
 .gradle/

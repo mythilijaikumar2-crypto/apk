@@ -19,11 +19,11 @@ class CustomTable extends StatelessWidget {
   final Widget? emptyState;
 
   const CustomTable({
-    Key? key,
+    super.key,
     required this.columns,
     required this.rows,
     this.emptyState,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
