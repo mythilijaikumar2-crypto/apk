@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.xml-namespace.org/tools">
+    <style name="Theme.SuperApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

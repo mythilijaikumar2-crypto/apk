@@ -1,0 +1,32 @@
+name: fintech_super_app
+description: "A complete Premium Fintech Super-App built in Flutter."
+version: 1.0.0+1
+
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.2
+
+  # Typography & Icons
+  google_fonts: ^6.2.0
+
+  # Animations
+  flutter_animate: ^4.5.0
+
+  # Dashboard Charts & Analytics
+  fl_chart: ^0.68.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
